@@ -1,0 +1,31 @@
+conditioning:
+  method: spad
+  params:
+    scale: 1
+
+data:
+  name: ffhq
+  root: ./data/samples/ #./data/dummy/ #/wdata_visl/liordvir/datasets/ffhq/test256x256/samples/ #/wdata_visl/liordvir/datasets/SPAD/validation/ #./data/samples/ # #/wdata_visl/liordvir/datasets/ffhq/test256x256/samples/ #./data/val_samples/
+
+measurement:
+  operator:
+    name: spad
+    ref_lux: 4 #1000 #mid 4
+    use_max_N: False
+    max_N: 100
+    pixel_pitch_m: 5e-6
+    fill_factor: 1.0
+    q: 0.9
+    tau_d: 100e-9
+    tau_s: 100e-9
+    Pap: 0.005
+    jitter_sigma: 200e-12
+    DCR: 100.0
+    T: 10e-6 #mid 10e-6 #10e-3 300
+    wavelength_m: 555e-9
+    afterpulse_delay_mean: 100e-9
+    lum_eff: 683
+
+  noise: 
+    name: gaussian
+    sigma: 0.05
