@@ -1,3 +1,10 @@
+'''
+You can use this code and adapt it, yet cite and credit the paper
+"Fundamental Recovery Bounds for SPAD Signals under Stationary Flux" by Lior Dvir, Nadav Torem, Mohit Gupta and Yoav Y. Schechner, Proceedings IEEE International Conference on Computational Imaging (ICCP) 2026,
+and provide a link to the source page
+https://zenodo.org/records/20858184
+'''
+
 import math
 import os
 from functools import partial
